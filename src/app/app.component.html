@@ -1,6 +1,6 @@
 <app-header></app-header>
 <main>
   <h1 align = "center">My Demo App</h1>
-  <app-post-create>(postCreated)="onPostAdded($event)</app-post-create>
-  <app-post-information ></app-post-information>
+  <app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
+  <app-post-information></app-post-information>
 </main>

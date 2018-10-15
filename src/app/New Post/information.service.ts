@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 @Injectable({providedIn: 'root'})
 
 export class InformationService {
-  private posts: Post = [];
+  private posts: Post[] = [];
   private postsUpdated = new Subject<Post[]>();
 
   constructor(private http: HttpClient) {}

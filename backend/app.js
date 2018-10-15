@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 app.post("/api/posts", (req, res, next) => {
   const post = new Info({
     name: req.body.first,
-    month: req.body.last,
+    month: req.body.month
   });
   post.save();
   console.log(post);
