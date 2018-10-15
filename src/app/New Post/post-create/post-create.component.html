@@ -1,0 +1,34 @@
+
+
+<mat-card>
+  <form (submit)='onAddPost(postForm)' #postForm='ngForm'>
+    <mat-form-field>
+      <input
+        matInput
+        type='text'
+        name='name'
+        ngModel
+        required
+        placeholder='name'
+        #name='ngModel'>
+      <mat-error *ngIf='name.invalid'>Please enter your name.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        type='text'
+        name='month'
+        ngModel
+        required
+        placeholder='month'
+        #month='ngModel'>
+      <mat-error *ngIf='month.invalid'>Please enter your month.</mat-error>
+    </mat-form-field>
+    <button
+    mat-raised-button
+    color='warn'
+    align='right'
+    type='submit'>Save Post</button>
+  </form>
+</mat-card>
